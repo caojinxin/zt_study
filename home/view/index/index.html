@@ -10,7 +10,7 @@
 	<div class="top">
 	   	<div class="center_box">
 		   	<div class="top left">
-		   		<?php foreach($list as $key => $value){ ?>
+		   		<?php foreach($firend_link_list as $key => $value){ ?>
 				<a href="<?php echo $value['link']?>" target="_blank"><?php echo $value['name']?></a><span>|</span>
 				<?php }?>
 		   	</div>
@@ -161,196 +161,28 @@
 	   	    </ul>
 	   	    <div class="nav_home_left">
 	   	    	<ul class="nav_left_l">
+	   	    		<?php foreach($classify_list as $key=>$value){ ?>
 		   	    	<li class="nav_li">
-		   	    	   <a href="" class="title">手机 平板 电话卡</a>
+		   	    	   <a href="" class="title"><?php echo $value['name']?></a>
 		   	    	   <div class="nav_left_children">
-			   	    	   	<ul class="children_s1 left">
+		   	    	   		<ul class="children_s1 left">
+		   	    	   		<?php foreach($value['good'] as $key=>$value) { ?>
 			   	    	   	 	<li>
 				   	    	   	 	<a href="">
-					   	    	   	 	<img src="./public/home/images/ab1.jpg">
-					   	    	   	 	<span class="phone">小米手机5</span>
+					   	    	   	 	<img width="40px" height="40px" src="<?php echo $value['pic']?>">
+					   	    	   	 	<span class="phone"><?php echo $value['name']?></span>
 				   	    	   	 	</a>
-				   	    	   	 	<a href="" class="choose_buy">选购</a>
+				   	    	   	 	<a href="" class="choose_buy"><?php echo $key?>选购</a>
 			   	    	   	 	</li>
-			   	    	   	 	<li>
-				   	    	   	 	<a href="">
-					   	    	   	 	<img src="./public/home/images/ab1.jpg">
-					   	    	   	 	<span class="phone">小米手机5</span>
-				   	    	   	 	</a>
-				   	    	   	 	<a href="" class="choose_buy">选购</a>
-			   	    	   	 	</li>
-			   	    	   	 	<li>
-			   	    	   	 		<a href="">
-					   	    	   	 	<img src="./public/home/images/ab1.jpg">
-					   	    	   	 	<span class="phone">小米手机5</span>
-			   	    	   	 	    </a>
-			   	    	   	 	    <a href="" class="choose_buy">选购</a>
-			   	    	   	 	</li>
-			   	    	   	 	<li>
-			   	    	   	 		<a href="">
-					   	    	   	 	<img src="./public/home/images/ab1.jpg">
-					   	    	   	 	<span class="phone">小米手机5</span>
-			   	    	   	 	   </a>
-			   	    	   	 	   <a href="" class="choose_buy">选购</a>
-			   	    	   	 	</li>
-			   	    	   	</ul>
-			   	    	   	<ul class="children_s1 left">
-			   	    	   	 	<li>
-				   	    	   	 	<a href="">
-					   	    	   	 	<img src="./public/home/images/ab1.jpg">
-					   	    	   	 	<span class="phone">小米手机5</span>
-				   	    	   	 	</a>
-				   	    	   	 	<a href="" class="choose_buy">选购</a>
-			   	    	   	 	</li>
-			   	    	   	 	<li>
-				   	    	   	 	<a href="">
-					   	    	   	 	<img src="./public/home/images/ab1.jpg">
-					   	    	   	 	<span class="phone">小米手机5</span>
-				   	    	   	 	</a>
-				   	    	   	 	<a href="" class="choose_buy">选购</a>
-			   	    	   	 	</li>
-			   	    	   	 	<li>
-			   	    	   	 		<a href="">
-					   	    	   	 	<img src="./public/home/images/ab1.jpg">
-					   	    	   	 	<span class="phone">小米手机5</span>
-			   	    	   	 	    </a>
-			   	    	   	 	    <a href="" class="choose_buy">选购</a>
-			   	    	   	 	</li>
-			   	    	   	 	<li>
-			   	    	   	 		<a href="">
-					   	    	   	 	<img src="./public/home/images/ab1.jpg">
-					   	    	   	 	<span class="phone">小米手机5</span>
-			   	    	   	 	   </a>
-			   	    	   	 	   <a href="" class="choose_buy">选购</a>
-			   	    	   	 	</li>
-			   	    	   	</ul>			   	    	    
-		   	    	   </div>
-		   	    	<li class="nav_li">
-			   	    	<a href="" class="title">电视 盒子</a>
-			   	    	<div class="nav_left_children">
-			   	    	   	<ul class="children_s1 left">
-			   	    	   	 	<li>
-				   	    	   	 	<a href="">
-					   	    	   	 	<img src="./public/home/images/ab1.jpg">
-					   	    	   	 	<span class="phone">小米手机5</span>
-				   	    	   	 	</a>
-				   	    	   	 	<a href="" class="choose_buy">选购</a>
-			   	    	   	 	</li>
-			   	    	   	 	<li>
-				   	    	   	 	<a href="">
-					   	    	   	 	<img src="./public/home/images/ab1.jpg">
-					   	    	   	 	<span class="phone">小米手机5</span>
-				   	    	   	 	</a>
-				   	    	   	 	<a href="" class="choose_buy">选购</a>
-			   	    	   	 	</li>
-			   	    	   	 	<li>
-			   	    	   	 		<a href="">
-					   	    	   	 	<img src="./public/home/images/ab1.jpg">
-					   	    	   	 	<span class="phone">小米手机5</span>
-			   	    	   	 	    </a>
-			   	    	   	 	    <a href="" class="choose_buy">选购</a>
-			   	    	   	 	</li>
-			   	    	   	 	
-			   	    	   	</ul>
-			   	    	   	<ul class="children_s1 left">
-			   	    	   	 	<li>
-				   	    	   	 	<a href="">
-					   	    	   	 	<img src="./public/home/images/ab1.jpg">
-					   	    	   	 	<span class="phone">小米手机5</span>
-				   	    	   	 	</a>
-				   	    	   	 	<a href="" class="choose_buy">选购</a>
-			   	    	   	 	</li>
-			   	    	   	 	<li>
-				   	    	   	 	<a href="">
-					   	    	   	 	<img src="./public/home/images/ab1.jpg">
-					   	    	   	 	<span class="phone">小米手机5</span>
-				   	    	   	 	</a>
-				   	    	   	 	<a href="" class="choose_buy">选购</a>
-			   	    	   	 	</li>
-			   	    	   	 	<li>
-			   	    	   	 		<a href="">
-					   	    	   	 	<img src="./public/home/images/ab1.jpg">
-					   	    	   	 	<span class="phone">小米手机5</span>
-			   	    	   	 	    </a>
-			   	    	   	 	    <a href="" class="choose_buy">选购</a>
-			   	    	   	 	</li>
-			   	    	   	 	<li>
-			   	    	   	 		<a href="">
-					   	    	   	 	<img src="./public/home/images/ab1.jpg">
-					   	    	   	 	<span class="phone">小米手机5</span>
-			   	    	   	 	   </a>
-			   	    	   	 	   <a href="" class="choose_buy">选购</a>
-			   	    	   	 	</li>
-			   	    	   	</ul>			   	    	    
+			   	    	   	 	<?php if(($key+1)%4 == 0) {
+			   	    	   	 		echo "</ul>";
+			   	    	   	 		echo '<ul class="children_s1 left">';
+			   	    	   	 		}?>
+			   	    	   	<?php } ?>	
+			   	    	   	</ul>	   	    	    
 		   	    	   </div>
 		   	    	</li>
-		   	    	<li class="nav_li">
-			   	    	<a href="" class="title">路由器 智能硬件</a>
-			   	    	<div class="nav_left_children">
-			   	    	   	<ul class="children_s1 left">
-			   	    	   	 	<li>
-				   	    	   	 	<a href="">
-					   	    	   	 	<img src="./public/home/images/ab1.jpg">
-					   	    	   	 	<span class="phone">小米手机5</span>
-				   	    	   	 	</a>
-				   	    	   	 	<a href="" class="choose_buy">选购</a>
-			   	    	   	 	</li>
-			   	    	   	 	<li>
-				   	    	   	 	<a href="">
-					   	    	   	 	<img src="./public/home/images/ab1.jpg">
-					   	    	   	 	<span class="phone">小米手机5</span>
-				   	    	   	 	</a>
-				   	    	   	 	<a href="" class="choose_buy">选购</a>
-			   	    	   	 	</li>
-			   	    	   	 	<li>
-			   	    	   	 		<a href="">
-					   	    	   	 	<img src="./public/home/images/ab1.jpg">
-					   	    	   	 	<span class="phone">小米手机5</span>
-			   	    	   	 	    </a>
-			   	    	   	 	    <a href="" class="choose_buy">选购</a>
-			   	    	   	 	</li>
-			   	    	   	 	
-			   	    	   	</ul>
-			   	    	   	<ul class="children_s1 left">
-			   	    	   	 	<li>
-				   	    	   	 	<a href="">
-					   	    	   	 	<img src="./public/home/images/ab1.jpg">
-					   	    	   	 	<span class="phone">小米手机5</span>
-				   	    	   	 	</a>
-				   	    	   	 	<a href="" class="choose_buy">选购</a>
-			   	    	   	 	</li>
-			   	    	   	 	<li>
-				   	    	   	 	<a href="">
-					   	    	   	 	<img src="./public/home/images/ab1.jpg">
-					   	    	   	 	<span class="phone">小米手机5</span>
-				   	    	   	 	</a>
-				   	    	   	 	<a href="" class="choose_buy">选购</a>
-			   	    	   	 	</li>
-			   	    	   	 	
-			   	    	   	</ul>			   	    	    
-		   	    	   </div>
-		   	    	</li>
-		   	    	<li class="nav_li">
-		   	    	    <a href=""class="title">移动电源 插线板</a>
-		   	    	</li>
-		   	    	<li class="nav_li">
-			   	    	<a href=""class="title">耳机 音箱</a>
-			   	    </li>	
-		   	    	<li class="nav_li">
-			   	    	<a href=""class="title">电池 存储卡</a>
-		   	    	</li>
-		   	    	<li class="nav_li">
-			   	    	<a href=""class="title">保护套 后盖</a>
-		   	    	</li>
-		   	    	<li class="nav_li">
-			   	    	<a href=""class="title">贴膜 其他配件</a>
-		   	    	</li>
-		   	    	<li class="nav_li">
-			   	    	<a href=""class="title">米兔 服装</a>
-		   	    	</li>
-		   	    	<li class="nav_li">
-			   	    	<a href=""class="title">箱包 其他周边</a>
-		   	    	</li>
+		   	    	<?php } ?>
 	   	    	</ul>
 	   	    </div>
 	   	    <div class="item">
@@ -364,7 +196,7 @@
 </div>	   	
    <div class="center_box box_list clearfix">
 	   	<ul class="list">
-	   		<?php foreach($lists as $key => $value){ ?>
+	   		<?php foreach($server_list as $key => $value){ ?>
 	   			<li><a href="<?php echo $value['link']?>"><?php echo $value['name']?></a></li>
 	   		<?php }?>
 	   	</ul>
@@ -381,29 +213,16 @@
 	    </div>
 	    <div class="single_list">
 	        <ul class="list_nav clearfix">
+	        	<?php foreach($goods_list as $key=>$value) { ?>
 		        <li class="s1">
 		            <a href="">
-			            <img src="./public/home/images/a1.jpg">			            
+			            <img src=<?php echo $value['pic']?>>			            
 		            </a>
-                    <h3>高性能手机</h3>
-		            <p>年轻人的酷炫手机</p>
-		            <span>1999元</span>		       
+                    <h3><?php echo $value['name']?></h3>
+		            <p><?php echo $value['second_name']?></p>
+		            <span><?php echo $value['price']/100?>元</span>        
 		        </li>
-		        <li class="s2">
-		            <a href=""><img src="./public/home/images/a2.jpg"></a>
-		        </li>
-		        <li class="s3">
-		            <a href=""><img src="./public/home/images/a3.jpg"></a>
-		        </li>
-		        <li class="s4">
-		        <a href=""><img src="./public/home/images/a4.jpg"><p></p></a>		        
-		        </li>
-		        <li class="s5"><a href=""><img src="./public/home/images/a5.jpg"></a></li>
-		        <li class="s5" ><a href=""><img src="./public/home/images/b1.jpg"></a></li>
-		        <li class="s4"><a href=><img src="./public/home/images/b2.jpg"></a></li>
-		        <li class="s3"><a href=><img src="./public/home/images/b3.jpg"></a></li>
-		        <li class="s2"><a href=><img src="./public/home/images/b4.jpg"></a></li>
-		        <li class="s1"><a href=><img src="./public/home/images/b5.jpg"></a></li>
+		        <?php } ?>
 	        </ul>
 	    	
 	    </div>       
