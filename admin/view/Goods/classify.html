@@ -1,0 +1,34 @@
+<?php include './admin/view/public/header.html';?>
+<!-- *********内容************* -->
+<div style="width:500px">
+	<div>
+		<a class="btn btn-default" href="index.php?m=admin&c=goods&a=index1">商品</a>
+	</div>
+	<div style="margin-top:10px">
+		<table class="table">
+	    	<tr>
+	    		<td>Id</td>
+	    		<td>名称</td>
+	    		<td>简介</td>
+	    		<td>价格</td>
+	    		<td>分类id</td>
+	    		<td>状态</td>
+	    	</tr>
+	    	<?php foreach($list as $key=>$value){ ?>
+	    	<tr>
+	    		<td><?php echo $value['id'] ?></td>
+	    		<td><?php echo $value['name'] ?></td>
+	    		<td><?php echo $value['second_name'] ?></td>
+	    		<td><?php echo $value['price'] ?></td>
+	    		<td><?php echo $value['classify_id'] ?></td>
+	    		<td><?php echo $value['flag'] ?></td>
+	    		<td>
+	    			<a href="index.php?m=admin&c=goods&a=delete2&id=<?php echo $value['id'];?>">删除</a>
+	    		</td>
+	    	</tr>
+	    	<?php } ?>
+	    </table>
+	</div> 
+</div>
+<!-- *********内容************* -->
+<?php include "./admin/view/public/footer.html"; ?> 
