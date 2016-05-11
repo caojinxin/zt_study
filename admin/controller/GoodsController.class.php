@@ -10,7 +10,16 @@ class GoodsController extends Controller
 
 	}
 	function index(){  //显示模版
-		$lists = M('Goods')->select('select * from zt_classify');
+		
+		//     删除按钮 点击进入 ?m=admin&c=classify&a=del&id=
+		$limit = 2;
+		$total = M('Goods')->select('select count(id) as total from zt_classify');
+		$total = current($total);
+		$total = $total['total'];
+		$page_num = ceil($total/$limit);
+		$p = gv('p')?gv('p'):1;
+		
+		$lists = M('Goods')->select('select * from zt_classify limit '.(($p-1)*$limit).','.$limit);
 		include "./admin/view/Goods/index.html";
 	}
 	function add(){  //显示注册模版
